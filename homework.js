@@ -6,15 +6,15 @@ console.log("His name is " + name + " and he was born in " + year);
 // -----------------------------------------------------------------------------
 
 // 2--
-function yearsold(year) {
-  return 2020 - year;
+function yearsold(age) {
+  return 2020 - age;
 }
 
-function newname(name) {
-  return name;
+function newname(name, age) {
+  const newprice = yearsold(age);
+  const result = "His name is " + name + " and he was born in " + newprice;
+  return result;
 }
 
-const result = yearsold(26);
-const resultname = newname("Ronald");
-console.log("His name is " + resultname + " and he was born in " + result);
+console.log(newname("Ronald", 26));
 //--------------------------------------------------------------------------------------
